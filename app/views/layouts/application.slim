@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Bitly
+    //= csrf_meta_tags
+    = stylesheet_pack_tag 'application'
+    link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons" rel="stylesheet" /
+    = javascript_pack_tag 'application'
+  body
+    #app
+      = yield

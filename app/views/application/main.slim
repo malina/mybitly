@@ -1,0 +1,22 @@
+.page-container
+  md-app md-mode="reveal"
+    md-app-toolbar.md-primary
+      md-button.md-icon-button(@click="menuVisible = !menuVisible")
+        md-icon menu
+      span.md-title My Title
+    md-app-drawer :md-active.sync="menuVisible"
+      md-toolbar.md-transparent md-elevation="0"  Navigation
+      md-list
+        md-list-item
+          md-icon move_to_inbox
+          span.md-list-item-text Inbox
+        md-list-item
+          md-icon send
+          span.md-list-item-text Sent Mail
+        md-list-item
+          md-icon delete
+          span.md-list-item-text Trash
+        md-list-item
+          md-icon error
+          span.md-list-item-text Spam
+    md-app-content
